@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Raleway", sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #251f3a;
+    
+}
+
+.card {
+    display: flex;
+    color: whitesmoke;
+    background-color: none;
+    flex-direction: column;
+    border-radius: 15px;
+    box-shadow:0 0px 30px #000000 ;
+}
+.heading {
+    background-color: #2a253c;
+    text-align: center;
+    padding: 25px 0px;
+    border-radius: 15px 15px 0px 0px;
+}
+.content {
+    display: flex;
+    color: whitesmoke;
+    font-size: 1.3rem;
+    height: 67vh;  
+}
+.colors {
+    display: flex;
+    gap: 20px;
+}
+input[type="color"] {
+    background: none;
+    border: none;
+    border-radius: 00px;
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+}
+
+.colors div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.left {
+    background-color: #393053;
+    /* background-color: #635985; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 0px 40px;
+    gap: 10px;
+    border-radius: 0px 0px 0px 15px;
+}
+
+.right {
+    height: 67vh;
+    width: 550px;
+    background-color: #393053;
+    display: flex;
+    align-items: center;
+    border-radius: 0px 0px 15px 0px;
+    justify-content: center;
+}
+
+.output {
+    border-radius: 15px;
+    background: linear-gradient(45deg, red, blue);
+    width: 80%;
+    height: 80%;
+}
+
+.angle {
+    display: flex;
+    flex-direction: column;
+}
+
+.angle p, .type p{
+    margin-bottom: 10px;
+}
+
+.type {
+    display: flex;
+    flex-direction: column;
+}
+
+select {
+    font-size: 1.4rem;
+    padding: 12px;
+    border-radius: 15px;
+    background-color: #18122B;
+    cursor: pointer;
+}
+
+
+.btn {
+    width: 70%;
+    padding: 15px 0px;
+    background-color: #FB2576;
+    color: white;
+    outline: none;
+    font-weight: 700;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0 6px 30px #050505; /* Shadow below the button */ /* Blurry shadow for depth */
+    transition: 0.2s ease;
+    margin-bottom: 20px;
+}
+
+.btn:active{
+    box-shadow: 0 4px 10px #050505;
+}

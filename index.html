@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Gradient Generator</title>
+    
+</head>
+<body>
+    <div class="card">
+
+        <div class="heading">
+            <h1>Simple CSS Gradient Generator</h1>
+        </div>
+
+<div class="content">
+    <section class="left">
+
+        <div class="colors">
+            <div>
+                <p>Color 1</p>
+                <input type="color" id="color1" oninput="change()" value="#ff0000">
+            </div>
+    
+            <div>
+                <p>Color 2</p>
+                <input type="color" id="color2" oninput="change()" value="#0000FF">
+            </div>
+        </div>
+
+
+
+        <div class="angle">
+            <p>Angle</p>
+            <select name="angle" id="angleSelector" onchange="change()">
+                <option value="0">0</option>
+                <option value="45">45</option>
+                <option value="90">90</option>
+                <option value="135">135</option>
+                <option value="180">180</option>
+                <option value="225">225</option>
+                <option value="270">270</option>
+                <option value="315">315</option>
+                <option value="360">360</option>
+            </select>        
+        </div>
+
+
+    <div class="type">
+        <p>Gradient Type</p>
+        <select name="type" id="typeSelector" onchange="change()">
+            <option value="linear">Linear</option>
+            <option value="radial">Radial</option>
+        </select>
+    </div>
+
+    <button class="btn" onclick="copyCSS()">Copy CSS !</button>
+
+    </section>
+
+
+
+    <section class="right">
+        <div class="output">
+            <!--COLOR OUTPUT HERE-->
+        </div>
+    </section>
+</div>
+
+
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
